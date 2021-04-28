@@ -1,16 +1,20 @@
+
 .search{
     display: flex;
     width: 100%;
     flex-direction: column;
+    background-color:#343a40;
 }
 
 .search--center{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color:#343a40;
 }
 
 .search--top{
     align-items: flex-start;
     justify-content: center;
+    background-color:#343a40;
 }

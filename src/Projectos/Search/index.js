@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Fragment } from 'react'
 import SearchBox from './Componenetes/SearchBox/index'
 import SearchResults from './Componenetes/SearchResults/index'
 import "./style.css"
@@ -129,23 +129,24 @@ useEffect(() =>{
         if ( data?.length) {
             const searchTexMinus = searchText.toLowerCase();
             const filterData = data.filter((value) =>
-                    value.name.toLowerCase().includes(searchTexMinus) ||
-                    value.phone.toLowerCase().includes(searchTexMinus)||
-                    value.email.toLowerCase().includes(searchTexMinus)||
-                    value.username.toLowerCase().includes(searchTexMinus)
-                )
+                    value.name.toLowerCase().includes(searchTexMinus)||                    
+                    value.username.toLowerCase().includes(searchTexMinus) 
+            )   
            setResults(filterData)
+          
        }
        
     };
     
     return (
-        <div className={`search ${isAtTop ? 'search--top' : 'search--center'}`}>
+        
+          <div className={`search ${isAtTop ? 'search--top' : 'search--center'}`}>
             <SearchBox 
             onSearch={handleSearchClick} 
             onClose={handleCloseSearch} 
             isSerching={isAtTop}/>
             <SearchResults results={results} isSerching={isAtTop}/>
-        </div>
+          </div>
+       
     );
 }

@@ -1,0 +1,47 @@
+[debug] [2021-04-25T01:22:51.507Z] ----------------------------------------------------------------------
+[debug] [2021-04-25T01:22:51.529Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rodrigo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-25T01:22:51.532Z] CLI Version:   9.10.0
+[debug] [2021-04-25T01:22:51.533Z] Platform:      win32
+[debug] [2021-04-25T01:22:51.534Z] Node Version:  v14.16.1
+[debug] [2021-04-25T01:22:51.540Z] Time:          Sat Apr 24 2021 22:22:51 GMT-0300 (hora estándar de Argentina)
+[debug] [2021-04-25T01:22:51.541Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-25T01:22:51.588Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-25T01:22:51.590Z] > authorizing via signed-in user (rodrigod33d@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Cursos\ReactJS\Proyectos\my-app
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using crud-1ef0a. 
+[debug] [2021-04-25T01:23:04.118Z] > refreshing access token with scopes: []
+[debug] [2021-04-25T01:23:04.121Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T01:23:07.767Z] <<< HTTP RESPONSE 200 {"date":"Sun, 25 Apr 2021 01:22:47 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T01:23:07.874Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/crud-1ef0a [none]
+[debug] [2021-04-25T01:23:10.015Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/crud-1ef0a 200
+[debug] [2021-04-25T01:23:10.017Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/crud-1ef0a {"projectId":"crud-1ef0a","projectNumber":"582793004893","displayName":"Crud","name":"projects/crud-1ef0a","resources":{"hostingSite":"crud-1ef0a"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
